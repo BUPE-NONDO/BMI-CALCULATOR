@@ -1,0 +1,62 @@
+# Jekyll Configuration for BMI Calculator
+title: BMI Calculator
+description: A simple and user-friendly web-based BMI (Body Mass Index) calculator
+author: BUPE-NONDO
+email: peternondo1@gmail.com
+url: "https://bupe-nondo.github.io"
+baseurl: "/BMI-CALCULATOR"
+
+# Theme
+theme: minima
+remote_theme: pages-themes/minimal@v0.2.0
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# GitHub Pages settings
+github:
+  repository_name: BMI-CALCULATOR
+  repository_url: https://github.com/BUPE-NONDO/BMI-CALCULATOR
+
+# SEO settings
+logo: /assets/images/logo.png
+social:
+  name: BUPE-NONDO
+  links:
+    - https://github.com/BUPE-NONDO
+
+# Google Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X
